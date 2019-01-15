@@ -1,0 +1,26 @@
+#!/bin/sh
+branch_name=`git symbolic-ref --short HEAD`
+fullname = $1
+echo $branch_name
+
+if [ $branch_name == 'wilfred-morgan' ] || [ $branch_name == 'dev' ]; then
+        echo
+        echo "*** Pushing $branch_name to GitHub repository ***"
+        echo
+        git push origin $branch_name
+	git push --tags
+else
+        echo
+        echo "Manually run \`git push\`"
+        echo
+fi
+
+
+
+
+
+
+
+
+
+
