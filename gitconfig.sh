@@ -10,7 +10,7 @@ if [ $lsproject == 'y' ]; then
     echo
     echo "***Setup GIT repository for Lambda School project"
     echo
-    git branch $fullname
+    git checkout -b $fullname
     echo "*** $fullname branch created ***"
     echo "*** Create starting dev branch ***"
     git checkout -b dev
