@@ -10,7 +10,10 @@ if [ $lsproject == 'y' ]; then
     echo
     echo "***Setup GIT repository for Lambda School project"
     echo
-    git checkout -b $fullname
+    git branch $fullname
+    echo "*** $fullname branch created ***"
+    echo "*** Create starting dev branch ***"
+    git checkout -b dev
     cp ~/devtools/git-tools/post-commit-lambdaschool .git/hooks/post-commit 
     cp ~/devtools/git-tools/post-merge-lambdaschool .git/hooks/post-merge
     echo
@@ -19,6 +22,8 @@ else
     echo
     echo "***Set GIT repository for standard project***"
     echo
+    echo "*** Create starting dev branch ***"
+    git checkout -b dev    
     cp ~/devtools/git-tools/post-commit .git/hooks/post-commit 
     cp ~/devtools/git-tools/post-merge .git/hooks/post-merge
     echo
