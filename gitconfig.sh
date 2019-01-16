@@ -18,6 +18,10 @@ if [ $lsproject == 'y' ]; then
     cp ~/devtools/git-tools/post-merge-lambdaschool .git/hooks/post-merge
     echo
     echo "***Lambda School COMMIT and MERGE scripts copied***"
+    echo 
+    cp ~/devtools/git-tools/gitignore-default .gitignore
+    echo "*** Copied default .gitignore file ***"
+    echo
 else
     echo
     echo "***Set GIT repository for standard project***"
@@ -28,4 +32,8 @@ else
     cp ~/devtools/git-tools/post-merge .git/hooks/post-merge
     echo
     echo "***COMMIT and MERGE scripts copied***"
+    echo 
+    cp ~/devtools/git-tools/gitignore-default .gitignore
+    echo "*** Copied default .gitignore file ***"
+    echo    
 fi
