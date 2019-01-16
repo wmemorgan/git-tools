@@ -1,4 +1,4 @@
-#Git Tools
+# Git Tools
 
 ## Description
 Git Tools is a collection of [Git hook scripts](https://githooks.com/) and configuration files designed to streamline and automate the setup, configuration, and Git workflow in projects.
