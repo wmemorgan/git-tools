@@ -11,9 +11,9 @@ Git Tools is a collection of [Git hook scripts](https://githooks.com/) and confi
   * [post-merge](#post-merge)
 
 ## Instructions
-  1. Clone repository unto your local machine.
-  2. Add path to environment variables (to globally execute the scripts).
-  3. Create or clone a project directory.
+  1. Clone the repository unto your local machine.
+  2. Add path to environment variables (to globally execute the scripts). [*First time use only*]
+  3. Go to your project directory
   4. Run `gitsetup` and follow the prompts.
 
 ---
@@ -32,9 +32,9 @@ A script which configures the project git settings by executing the tasks:
 
 
 ### post-commit <a name="post-commit"></a>
-A predefined git hook script which automatically runs a `git push` command after a `commit` has been posted in a specified branch.
+A predefined [git hook](https://githooks.com/) script which automatically runs a `git push` command after a `commit` has been posted in a specified branch.
 
 
 ---
 ### post-merge <a name="post-merge"></a>
-A predefined git hook script which automatically runs a `git push` command after a `merge` has been posted in a specified branch. 
+A predefined [git hook](https://githooks.com/) script which automatically runs a `git push` command after a `merge` has been posted in a specified branch. 
