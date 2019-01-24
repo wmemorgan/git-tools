@@ -1,4 +1,5 @@
 # Git Tools
+*Version 0.3.0*
 
 ## Description
 Git Tools is a collection of [Git hook scripts](https://githooks.com/) and configuration files designed to streamline and automate the setup, configuration, and Git workflow in projects.
@@ -13,8 +14,7 @@ Git Tools is a collection of [Git hook scripts](https://githooks.com/) and confi
   1. Clone repository unto your local machine.
   2. Add path to environment variables (to globally execute the scripts).
   3. Create or clone a project directory.
-  4. Change the branch name in the **post-commit-lambdaschool** and **post-merge-lambdaschool** script files (*for Lambda School projects only*)
-  5. Run `gitsetup` and follow the prompts.
+  4. Run `gitsetup` and follow the prompts.
 
 ---
 ## Details
