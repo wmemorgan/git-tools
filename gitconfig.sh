@@ -18,6 +18,11 @@ if [ $lsproject == 'y' ]; then
     cp ~/devtools/git-tools/post-merge-lambdaschool .git/hooks/post-merge
     echo
     echo "***Lambda School COMMIT and MERGE scripts copied***"
+    echo
+    echo "***Adding branch: "$ls_branch" to the git hook scripts"
+    echo
+    echo 'ls_branch='$fullname'\n'"$(cat .git/hooks/post-commit)" > .git/hooks/post-commit
+    echo 'ls_branch='$fullname'\n'"$(cat .git/hooks/post-merge)" > .git/hooks/post-merge 
     echo 
     cp ~/devtools/git-tools/gitignore-default .gitignore
     echo "*** Copied default .gitignore file ***"
