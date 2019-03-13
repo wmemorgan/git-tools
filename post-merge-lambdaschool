@@ -1,8 +1,9 @@
 #!/bin/sh
+echo $ls_branch
 branch_name=`git symbolic-ref --short HEAD`
 echo $branch_name
 
-if [ $branch_name == 'wilfred-morgan' ] || [ $branch_name == 'dev' ]; then
+if [ $branch_name == $ls_branch ] || [ $branch_name == 'dev' ]; then
         echo
         echo "*** Pushing $branch_name to GitHub repository ***"
         echo
